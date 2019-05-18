@@ -7,15 +7,15 @@ from instapy import set_workspace
 
 
 # set workspace folder at desired location (default is at your home folder)
-set_workspace(path=None)
+set_workspace(path=".")
 
 # get an InstaPy session!
-session = InstaPy()
+session = InstaPy(username="tera.fufad",
+                  password="sandhusohal123",
+                  headless_browser=True)
 
 with smart_run(session):
     """ Activity flow """
-    # general settings
-    session.set_dont_include(["friend1", "friend2", "friend3"])
+    session.accept_follow_requests(amount=50)
 
-    # activity
-    session.like_by_tags(["natgeo"], amount=10)
+exit()
