@@ -11,7 +11,7 @@ set_workspace(path=".")
 
 # get an InstaPy session!
 session = InstaPy(username="tera.fufad",
-                  password="sandhusohal123",
+                  password="sandhusohal12345",
                   headless_browser=True)
 
 with smart_run(session):
